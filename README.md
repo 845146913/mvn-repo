@@ -13,6 +13,14 @@ MAVEN个人仓库
         <url>https://gitee.com/wangshuip/mvn-repo/raw/master</url>
     </repository>
 </repositories>
+
+
+
+<dependency>
+    <groupId>com.silencew.plugins</groupId>
+    <artifactId>jpa-enums-plugin</artifactId>
+    <version>0.0.1</version>
+</dependency>
 ```
 
 #### 参与贡献
