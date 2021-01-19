@@ -12,6 +12,14 @@ MAVEN个人仓库
         <id>silencew-maven</id>
         <url>https://gitee.com/wangshuip/mvn-repo/raw/master</url>
     </repository>
+    <repository>
+        <id>silencew-repository</id>
+        <url>https://raw.github.com/845146913/mvn-repo/master</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
+    </repository>
 </repositories>
 
 
