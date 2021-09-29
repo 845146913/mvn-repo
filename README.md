@@ -27,7 +27,14 @@ MAVEN个人仓库
 <dependency>
     <groupId>com.silencew.plugins</groupId>
     <artifactId>jpa-enums-plugin</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
+</dependency>
+
+<!--请求参数自定义枚举插件starter-->
+<dependency>
+    <groupId>com.silencew.plugins</groupId>
+    <artifactId>silencew-enums-spring-boot-starter</artifactId>
+    <version>1.0.2</version>
 </dependency>
 ```
 
