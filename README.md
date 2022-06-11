@@ -38,6 +38,26 @@ MAVEN个人仓库
 </dependency>
 ```
 
+## enum-jackson插件说明20220611
+
+原来jpa-enums-plugin的starter插件更名为enum-jackson-boot-starter；
+
+对应版本为1.0-SNAPSHOT，稳定版本为1.0.1；
+```html
+<dependency>
+    <groupId>com.silencew.plugins</groupId>
+    <artifactId>enum-jackson-boot-starter</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+
+<!--推荐使用release版本-->
+<dependency>
+    <groupId>com.silencew.plugins</groupId>
+    <artifactId>enum-jackson-boot-starter</artifactId>
+    <version>1.0.1</version>
+</dependency>
+```
+
 #### 参与贡献
 
 1.  Fork 本仓库
