@@ -58,6 +58,65 @@ MAVEN个人仓库
 </dependency>
 ```
 
+## enum-swagger3插件说明
+基于springfox3.0扩展的自定义枚举展示插件；支持自定义枚举解析和原始枚举类解析；
+可配置enum-jackson插件一起使用；
+使用示例：
+```html
+<!--// pom.xml引入依赖-->
+<dependency>
+    <groupId>com.silencew.plugins</groupId>
+    <artifactId>enum-swagger3</artifactId>
+    <version>1.0.1</version>
+</dependency>
+```
+```java
+
+@Getter
+@AllArgsConstructor
+@SwaggerEnum
+public enum WindowType implements BaseEnum<WindowType, Integer> {
+    DOS(1),
+    LINUX(2);
+    private final Integer code;
+}
+// or 原始enum
+@Getter
+@AllArgsConstructor
+@SwaggerEnum
+public enum WindowType {
+    DOS(1, "windows"),
+    LINUX(2, "ubuntu");
+    private final Integer code;
+    private final String message;
+    @JsonValue
+    public Integer getCode() {
+        return this.code;
+    }
+}
+
+@Data
+@ApiModel("测试模型")
+public class DemoDto {
+    @ApiModelProperty("返回码")
+    private int code;
+    @ApiModelProperty("标识")
+    private boolean flag;
+    @ApiModelProperty("标识1")
+    private String name;
+    @ApiModelProperty("类型")
+    private WindowType type;
+}
+@RestController
+public class TestController{
+    @PostMapping
+    @ApiOperation("test2")
+    public Object test1(@RequestBody DemoDto req) {
+        return ResponseEntity.ok(req);
+    }
+}
+```
+
 #### 参与贡献
 
 1.  Fork 本仓库
