@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.silencew.plugins</groupId>
+  <artifactId>enum-swagger3</artifactId>
+  <versioning>
+    <release>1.0.1</release>
+    <versions>
+      <version>1.0.1</version>
+    </versions>
+    <lastUpdated>20220611101228</lastUpdated>
+  </versioning>
+</metadata>
