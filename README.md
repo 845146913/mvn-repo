@@ -27,17 +27,19 @@ MAVEN个人仓库
 <dependency>
     <groupId>com.silencew.plugins</groupId>
     <artifactId>jpa-enums-plugin</artifactId>
-    <version>0.0.3</version>
+    <version>1.0.5</version>
 </dependency>
 
 <!--请求参数自定义枚举插件starter-->
 <dependency>
     <groupId>com.silencew.plugins</groupId>
     <artifactId>silencew-enums-spring-boot-starter</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.5</version>
 </dependency>
 ```
-
+## silencew-enums-starter升级至1.0.5
+> BaseEnum codeOf优化，添加codeOfOptional方法，不再默认抛出非法参数异常
+> requestBody 解析json枚举字段移除解析失败抛出异常代码，交给validation等框架扩展 
 ## enum-jackson插件说明20220611
 
 原来jpa-enums-plugin的starter插件更名为enum-jackson-boot-starter；
